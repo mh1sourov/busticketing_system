@@ -642,16 +642,16 @@
                                     <input class="w-full rounded-xl border-[1px] outline-0 h-[50px] p-2" type="text" placeholder="Enter Your name">
                                  </div>
                                  <div class="p-2 mb-2">
-                                    <h1 class="text-[#030712] font-[inter] text-xs m-2 font-semibold">Phone Number*</h1>
+                                    <h1 class="text-[#030712] font-[inter] text-xs m-2 font-semibold" id="userPhoneNumber">Phone Number*</h1>
                                     <input class="w-full rounded-xl border-[1px] outline-0 h-[50px] p-2" type="number" placeholder="Enter Your Phone Number">
                                  </div>
                                  <div class="p-2 mb-2">
                                     <h1 class="text-[#030712] font-[inter] text-xs m-2 font-semibold">Email ID*</h1>
-                                    <input class="w-full rounded-xl border-[1px] outline-0 h-[50px] p-2" type="email" placeholder="Enter Your Email Id">
+                                    <input class="w-full rounded-xl border-[1px] outline-0 h-[50px] p-2" type="email" placeholder="Enter Your Email Id" id="userEmail">
                                  </div>
                                   
                                  <div class="p-2 rounded-xl mb-2">
-                                    <button class="btn btn-success bg-[#1DD100] w-full h-[40px] border-none text-white outline-none">Next</button>
+                                    <button class="btn btn-success bg-[#1DD100] w-full h-[40px] border-none text-white outline-none" id="nextBtn" disabled>Next</button>
                                  </div>
                                    
                                  <div class="text-[#03071299] flex justify-around mb-12">
@@ -712,6 +712,21 @@
           </footer>
           
     </footer>
+
+    <!-- You can open the modal using ID.showModal() method -->
+
+<dialog id="my_modal_4" class="modal">
+  <div class="modal-box w-11/12 max-w-5xl">
+    <h3 class="text-lg font-bold">Hello!</h3>
+    <p class="py-4">Click the button below to close</p>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
 
     <script src="./JS/ticket.js"></script>
   </body>

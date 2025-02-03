@@ -98,18 +98,32 @@ document.getElementById("avalableSeat").innerText = availableSeat;
        
         
       })
+
+let nextButton = document.getElementById("nextBtn")
+let selectSeatString = document.getElementById("numberOfSelectedSeat").innerText;
+let selectedSeatCount = parseInt(selectSeatString);
+let userPhone = document.getElementById("userPhoneNumber").value;
+let userPhoneNumber = parseInt(userPhone)
+
+if(selectedSeatCount > 0){
+    nextButton.disabled = false;
+   
+}
       
        
     })
-    
-
-    
+       
 }
+let nextButton = document.getElementById("nextBtn")
+nextButton.addEventListener("click", function(){
+    window.location.href = "http://127.0.0.1:5500/check.html";
+
+    // console.log("clicked")
+})
+ // Redirects to new page
 
 
 // *************
-
-
 
 function disableDiv() {
 
