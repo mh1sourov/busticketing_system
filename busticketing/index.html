@@ -602,16 +602,16 @@
                                         <h1>Price</h1>
                                      </div>
 
-                                     <div class="border-2 border-red-600 flex justify-between">
-                                      <div class="mb-4" id="displayedSeatSection">
+                                     <div class="flex justify-between">
+                                      <div class="mb-4 text-ellipsis" id="displayedSeatSection">
                                        
                                      </div>
 
-                                     <div class="" id="seatClass">
+                                     <div class="text-ellipsis" id="seatClass">
                                      
                                      </div>
 
-                                     <div id="seatPriceContainer">
+                                     <div class="text-ellipsis" id="seatPriceContainer">
                                       
                                      </div>
 
@@ -626,13 +626,13 @@
                                      </div>
 
                                      <div class="w-full h-[45px] bg-white flex items-center justify-between rounded-xl mt-3 mb-3">
-                                        <input class="p-2 outline-none w-full" type="text" placeholder="Have Any Coupon?">
-                                        <button class="btn btn-success bg-[#1DD100] w-[80px] h-[40px] border-none text-white outline-none">Apply</button>
+                                        <input id="couponeInputField" class="p-2 outline-none w-full" type="text" placeholder="Have Any Coupon?">
+                                        <button class=" btn btn-success bg-[#1DD100] w-[80px] h-[40px] border-none text-white outline-none" id="couponeAppplybtn" disabled>Apply</button>
                                      </div>
 
                                      <div class="flex items-center justify-between mt-2">
                                         <h1 class="text-black font-semibold tex-[3px]">Grand Total</h1>
-                                        <h1 class="text-black font-semibold tex-[3px]">BDT: <span>100</span></h1>
+                                        <h1 class="text-black font-semibold tex-[3px]">BDT: <span id="grandTotal"></span></h1>
                                      </div>
 
                                  </div>
